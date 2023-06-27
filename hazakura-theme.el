@@ -24,11 +24,11 @@
   (fg-dark "#5c5c61")
   (fg-dark-alt "#454449")
   (bg "#151517")
-  (bg-dark "#0d0d0f")
+  (bg-dark "#151517")
   (bg-light "#27272b")
   (selection "#454449")
   (highlight "#5c5c61")
-  (comment "#7ee6ae")
+  (comment "#454449")
   (hazakura-red "#f06969")
   (hazakura-green "#91d65c")
   (hazakura-blue "#a292e8")
@@ -67,7 +67,9 @@
   (mode-line (:background bg-light))
 
   ;; Window
-  (window-divider (:foreground selection))
+  (window-divider (:foreground bg :background bg))
+  (window-divider-first-pixel (:foreground bg :background bg))
+  (window-divider-last-pixel (:foreground bg :background bg))
 
   ;; Org mode
   (org-code (:foreground fg-dark))
