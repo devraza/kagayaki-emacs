@@ -42,16 +42,16 @@
   (region (:background selection))
   (highlight (:background bg-light))
   (help-key-binding (:background bg :foreground hazakura-magenta :slant 'italic))
-  (font-lock-keyword-face (:foreground hazakura-magenta))
-  (show-paren-match (:foreground hazakura-green :weight 'bold))
+  (font-lock-keyword-face (:foreground hazakura-blue :slant 'italic))
+  (show-paren-match (:foreground hazakura-magenta :weight 'bold :underline t))
   (show-paren-mismatch (:foreground hazakura-red :weight 'bold))
-  (line-number (:foreground highlight :background bg))
-  (line-number-current-line (:foreground fg :background bg))
+  (line-number (:foreground comment :background bg :slant 'italic))
+  (line-number-current-line (:foreground hazakura-magenta :background bg :weight 'bold :slant 'italic))
   (font-lock-variable-name-face (:foreground hazakura-yellow))
   (font-lock-warning-face (:foreground hazakura-yellow))
   (completions-common-part (:foreground hazakura-blue))
   (completions-first-difference (:foreground fg))
-  (font-lock-constant-face (:foreground hazakura-yellow))
+  (font-lock-constant-face (:foreground hazakura-green))
   (font-lock-string-face (:foreground hazakura-green))
   (font-lock-builtin-face (:foreground hazakura-red))
   (error (:foreground hazakura-red))
@@ -81,15 +81,15 @@
   (org-done (:foreground hazakura-green :slant 'normal))
   (org-meta-line (:foreground fg-dark-alt))
   (org-link (:foreground hazakura-green :underline t :weight 'bold))
-  (org-drawer (:foreground hazakura-red))
+  (org-drawer (:foreground comment))
   (org-date (:foreground hazakura-magenta))
   (org-table (:foreground hazakura-cyan))
   (org-special-keyword (:foreground fg))
-  (org-document-info-keyword (:foreground hazakura-yellow))
+  (org-document-info-keyword (:foreground hazakura-green))
   (org-list-dt (:foreground hazakura-red))
-  (org-level-1 (:weight 'bold))
-  (org-level-2 (:weight 'bold))
-  (org-level-3 (:weight 'bold))
+  (org-level-1 (:foreground hazakura-blue :weight 'bold))
+  (org-level-2 (:foreground hazakura-cyan :weight 'bold))
+  (org-level-3 (:foreground hazakura-green :weight 'bold))
   (org-level-4 (:weight 'bold))
   (org-level-5 (:weight 'bold))
   (org-level-6 (:weight 'bold))
@@ -102,20 +102,20 @@
   (org-superstar-header-bullet (:foreground hazakura-magenta :slant 'normal))
 
   ;; Markdown
-  (markdown-code-face (:inherit 'default :foreground hazakura-yellow))
-  (markdown-header-face (:foreground hazakura-magenta :weight 'bold))
+  (markdown-code-face (:inherit 'default :foreground hazakura-blue))
+  (markdown-header-face (:foreground hazakura-cyan :weight 'bold))
 
   ;; Vertico
   (vertico-current (:background bg-light))
 
   ;; Minibuffer prompt
-  (minibuffer-prompt (:foreground hazakura-magenta))
+  (minibuffer-prompt (:foreground hazakura-green))
 
   ;; Orderless
-  (orderless-match-face-0 (:foreground hazakura-yellow))
-  (orderless-match-face-1 (:foreground hazakura-green))
-  (orderless-match-face-2 (:foreground hazakura-blue))
-  (orderless-match-face-3 (:foreground hazakura-cyan))
+  (orderless-match-face-0 (:foreground hazakura-blue))
+  (orderless-match-face-1 (:foreground hazakura-cyan))
+  (orderless-match-face-2 (:foreground hazakura-green))
+  (orderless-match-face-3 (:foreground hazakura-yellow))
 
   ;; which-key
   (which-key-command-description-face (:foreground fg))
@@ -173,7 +173,7 @@
   (magit-diff-added-highlight (:background bg-dark :foreground hazakura-green :slant 'italic))
   (magit-diff-context-highlight (:background bg-dark :foreground fg :slant 'italic))
   (magit-diff-removed-highlight (:background bg-dark :foreground hazakura-red :slant 'italic))
-  
+
   ;; Flycheck
   (flycheck-inline-info (:foreground hazakura-yellow))
   (flycheck-inline-warning (:foreground hazakura-magenta))
