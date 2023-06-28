@@ -26,12 +26,13 @@
   (bg "#151517")
   (bg-dark "#151517")
   (bg-light "#27272b")
-  (selection "#454449")
+  (selection "#242426")
   (highlight "#5c5c61")
   (comment "#454449")
   (hazakura-red "#f06969")
   (hazakura-green "#91d65c")
-  (hazakura-blue "#a292e8")
+  (hazakura-purple "#a292e8")
+  (hazakura-blue "#78b9c4")
   (hazakura-magenta "#e887bb")
   (hazakura-yellow "#d9d564")
   (hazakura-cyan "#7ee6ae"))
@@ -42,18 +43,18 @@
   (region (:background selection))
   (highlight (:background bg-light))
   (help-key-binding (:background bg :foreground hazakura-magenta :slant 'italic))
-  (font-lock-keyword-face (:foreground hazakura-blue :slant 'italic))
+  (font-lock-keyword-face (:foreground hazakura-purple :slant 'italic))
   (show-paren-match (:foreground hazakura-magenta :weight 'bold :underline t))
   (show-paren-mismatch (:foreground hazakura-red :weight 'bold))
   (line-number (:foreground comment :background bg :slant 'italic))
   (line-number-current-line (:foreground hazakura-magenta :background bg :weight 'bold :slant 'italic))
   (font-lock-variable-name-face (:foreground hazakura-yellow))
   (font-lock-warning-face (:foreground hazakura-yellow))
-  (completions-common-part (:foreground hazakura-blue))
+  (completions-common-part (:foreground hazakura-purple))
   (completions-first-difference (:foreground fg))
   (font-lock-constant-face (:foreground hazakura-green))
   (font-lock-string-face (:foreground hazakura-green))
-  (font-lock-builtin-face (:foreground hazakura-red))
+  (font-lock-builtin-face (:foreground hazakura-blue))
   (error (:foreground hazakura-red))
   (font-lock-type-face (:foreground hazakura-red))
   (font-lock-comment-face (:foreground comment))
@@ -77,7 +78,7 @@
   (org-ellipsis (:foreground fg-dark-alt :weight 'bold))
   (org-headline-done (:foreground fg))
   (org-checkbox (:foreground hazakura-magenta))
-  (org-todo (:foreground hazakura-magenta :slant 'normal))
+  (org-todo (:foreground hazakura-cyan :slant 'normal))
   (org-done (:foreground hazakura-green :slant 'normal))
   (org-meta-line (:foreground fg-dark-alt))
   (org-link (:foreground hazakura-green :underline t :weight 'bold))
@@ -87,7 +88,7 @@
   (org-special-keyword (:foreground fg))
   (org-document-info-keyword (:foreground hazakura-green))
   (org-list-dt (:foreground hazakura-red))
-  (org-level-1 (:foreground hazakura-blue :weight 'bold))
+  (org-level-1 (:foreground hazakura-purple :weight 'bold))
   (org-level-2 (:foreground hazakura-cyan :weight 'bold))
   (org-level-3 (:foreground hazakura-green :weight 'bold))
   (org-level-4 (:weight 'bold))
@@ -102,7 +103,7 @@
   (org-superstar-header-bullet (:foreground hazakura-magenta :slant 'normal))
 
   ;; Markdown
-  (markdown-code-face (:inherit 'default :foreground hazakura-blue))
+  (markdown-code-face (:inherit 'default :foreground hazakura-purple))
   (markdown-header-face (:foreground hazakura-cyan :weight 'bold))
 
   ;; Vertico
@@ -112,7 +113,7 @@
   (minibuffer-prompt (:foreground hazakura-green))
 
   ;; Orderless
-  (orderless-match-face-0 (:foreground hazakura-blue))
+  (orderless-match-face-0 (:foreground hazakura-purple))
   (orderless-match-face-1 (:foreground hazakura-cyan))
   (orderless-match-face-2 (:foreground hazakura-green))
   (orderless-match-face-3 (:foreground hazakura-yellow))
@@ -123,14 +124,14 @@
   ;; Dired
   (diredfl-read-priv (:foreground hazakura-yellow))
   (diredfl-dir-heading (:foreground hazakura-magenta :weight 'bold))
-  (diredfl-dir-priv (:foreground hazakura-blue))
+  (diredfl-dir-priv (:foreground hazakura-purple))
   (diredfl-no-priv (:foreground fg-dark))
   (diredfl-write-priv (:foreground hazakura-red))
   (diredfl-exec-priv (:foreground hazakura-green))
   (diredfl-dir-name (:foreground hazakura-magenta))
   (diredfl-file-name (:foreground fg))
   (diredfl-file-suffix (:foreground hazakura-yellow))
-  (diredfl-date-time (:foreground hazakura-blue))
+  (diredfl-date-time (:foreground hazakura-purple))
 
   ;; Evil
   (evil-ex-info (:foreground hazakura-red))
@@ -139,7 +140,7 @@
   (evil-ex-substitute-replacement (:foreground hazakura-red :weight 'bold))
 
   ;; Eglot
-  (eglot-highlight-symbol-face (:foreground hazakura-blue))
+  (eglot-highlight-symbol-face (:foreground hazakura-purple))
 
   ;; Rustic
   (rustic-compilation-error (:foreground hazakura-red))
@@ -155,13 +156,13 @@
   (magit-header-line (:foreground hazakura-cyan :weight 'bold :background bg))
   (magit-diff-file-heading-highlight (:foreground hazakura-yellow :weight 'bold))
 
-  (magit-section-highlight (:foreground hazakura-blue :weight 'bold))
+  (magit-section-highlight (:foreground hazakura-purple :weight 'bold))
   (magit-section-heading (:foreground hazakura-magenta))
-  (magit-head (:foreground hazakura-blue))
+  (magit-head (:foreground hazakura-purple))
   (magit-hash (:foreground fg-dark-alt))
   (magit-header-line (:foreground hazakura-yellow))
-  (magit-branch-current (:foreground hazakura-blue))
-  (magit-branch-local (:foreground hazakura-blue))
+  (magit-branch-current (:foreground hazakura-purple))
+  (magit-branch-local (:foreground hazakura-purple))
   (magit-branch-remote (:foreground hazakura-cyan))
 
   (magit-diff-added (:foreground hazakura-green :background bg :slant 'italic))
