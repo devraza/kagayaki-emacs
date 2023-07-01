@@ -86,6 +86,9 @@
   (window-divider-first-pixel (:foreground bg :background bg))
   (window-divider-last-pixel (:foreground bg :background bg))
 
+  ;; Fringe
+  (fringe (:background bg :foreground bg))
+
   ;; Org mode
   (org-code (:foreground fg-dark))
   (org-block (:foreground fg-dark))
@@ -167,8 +170,8 @@
   (git-commit-overlong-summary (:foreground hazakura-red))
   
   ;; Magit
-  (magit-header-line (:foreground hazakura-cyan :weight 'bold :background bg))
-  (magit-diff-file-heading-highlight (:foreground hazakura-yellow :weight 'bold))
+  (magit-header-line (:foreground fg :weight 'bold :background bg :underline (:color comment)))
+  (magit-diff-file-heading-highlight (:foreground hazakura-purple :weight 'bold))
 
   (magit-section-highlight (:foreground hazakura-purple :weight 'bold))
   (magit-section-heading (:foreground hazakura-magenta))
@@ -184,10 +187,14 @@
   (magit-diff-removed (:foreground hazakura-red :background bg :slant 'italic))
   
   (magit-diff-hunk-heading-highlight (:background bg-dark :foreground hazakura-magenta :weight 'bold))
-  (magit-diff-hunk-heading (:background bg-dark :foreground fg-dark))
-  (magit-diff-added-highlight (:background bg-dark :foreground hazakura-green :slant 'italic))
-  (magit-diff-context-highlight (:background bg-dark :foreground fg :slant 'italic))
-  (magit-diff-removed-highlight (:background bg-dark :foreground hazakura-red :slant 'italic))
+  (magit-diff-hunk-heading (:background bg-light :foreground fg-dark))
+  (magit-diff-added-highlight (:background bg-light :foreground hazakura-green))
+  (magit-diff-base-highlight (:background fg :foreground hazakura-blue))
+  (magit-diff-lines-highlight (:background hazakura-cyan))
+  (magit-diff-lines-heading (:background hazakura-blue :foreground fg))
+  (magit-diff-lines-boundary (:background hazakura-blue))
+  (magit-diff-context-highlight (:background bg-light :foreground fg))
+  (magit-diff-removed-highlight (:background bg-light :foreground hazakura-red))
 
   ;; Flycheck
   (flycheck-inline-info (:foreground hazakura-yellow))
