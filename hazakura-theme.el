@@ -67,6 +67,20 @@
   ;; Modeline
   (mode-line (:background bg-light))
 
+  ;; NANO-modeline
+  (nano-modeline-active (:box () :foreground fg :background bg-light))
+  (nano-modeline-inactive (:box () :foreground highlight :background bg-light))
+  (nano-modeline-status (:foreground fg :background hazakura-purple :weight 'bold))
+
+  ;; Bespoke modeline
+  (bespoke-modeline-active-status-** (:foreground fg :background hazakura-blue :weight 'bold))
+  (bespoke-modeline-active-status-RW (:foreground fg :background hazakura-purple :weight 'bold))
+  (bespoke-modeline-active-status-RO (:foreground fg :background hazakura-magenta :weight 'bold))
+  (bespoke-modeline-inactive (:background bg-light :foreground highlight))
+  (bespoke-modeline-inactive-name (:background bg-light :foreground highlight))
+  (bespoke-modeline-inactive-primary (:background bg-light :foreground highlight))
+  (bespoke-modeline-inactive-secondary (:background bg-light :foreground highlight))
+
   ;; Window
   (window-divider (:foreground bg :background bg))
   (window-divider-first-pixel (:foreground bg :background bg))
