@@ -60,7 +60,7 @@
  `(isearch-fail ((,class :foreground ,hazakura-red :weight bold)))
 
  ;; Modeline
- `(mode-line ((,class :background bg-light)))
+ `(mode-line ((,class :background ,bg-light)))
 
  ;; NANO-modeline
  `(nano-modeline-active ((,class :box () :foreground ,fg :background ,bg-light)))
