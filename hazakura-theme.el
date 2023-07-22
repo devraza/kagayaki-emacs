@@ -87,7 +87,7 @@
   (window-divider-last-pixel (:foreground bg :background bg))
 
   ;; Fringe
-  (fringe (:background bg :foreground bg))
+  (fringe (:background fg :foreground fg))
 
   ;; Org mode
   (org-code (:foreground fg-dark))
