@@ -1,4 +1,4 @@
-
+;;; hazakura-theme.el --- The soft yet colorful theme for Emacs.
 ;;; Commentary:
 ;;
 ;; This theme does it's best to make Emacs look beautiful,
