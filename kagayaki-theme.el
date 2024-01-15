@@ -16,7 +16,7 @@
   (error "Requires Emacs 26 or later"))
 
 (autothemer-deftheme
- kagayaki "The soft yet colorful theme for Emacs."
+ kagayaki "A gorgeously soft colorscheme for Emacs."
 
  ((((class color) (min-colors #xFFFFFF)))
   ;; Specify the color palette, color columns correspond to each of the classes above.
