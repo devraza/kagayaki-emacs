@@ -3,7 +3,7 @@ This is a port of the `kagayaki` colorscheme for Emacs, made using [autothemer](
 
 This is the default theme for [`dianciemacs`](https://git.devraza.duckdns.org/devraza/dianciemacs) - rather, this theme was created specifically for it.
 
-> **Note**: an independant variant of the theme (that is, one that does not rely on `autothemer`) has been produced by [Haider Mirza](https://github.com/Haider-Mirza). See the `independant` branch for details.
+> **Note** an independant variant of the theme (that is, one that does not rely on `autothemer`) has been produced by [Haider Mirza](https://github.com/Haider-Mirza). See the `independant` branch for details.
 
 ## Screenshots
 From the DianciEmacs' `README.md`:
