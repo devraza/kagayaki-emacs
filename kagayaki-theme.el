@@ -1,4 +1,4 @@
-;;; kagayaki-theme.el --- The soft yet colorful theme for Emacs.
+;;; kagayaki-theme.el --- The soft yet colorful theme for Emacs. -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;
 ;; This theme does it's best to make Emacs look beautiful,
